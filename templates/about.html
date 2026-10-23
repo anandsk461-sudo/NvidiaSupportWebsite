@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}About — NVIDIA Support{% endblock %}
+{% block content %}
+<section class="page-hero shell">
+  <div class="eyebrow">ABOUT THE PROJECT</div>
+  <h1>Built around <span class="red-dot">support.</span></h1>
+  <p>NVIDIA Support is a Discord support bot project focused on giving community members a clear way to ask for help through private tickets.</p>
+</section>
+<section class="shell about-grid">
+  <div class="about-panel"><span class="panel-kicker">OUR PURPOSE</span><div class="about-monogram">N<span>.</span></div><h2>Make asking for help simple.</h2><p>The current bot creates private ticket channels, lets the ticket owner or authorized staff close them, and gives administrators a panel command to publish the entry point.</p></div>
+  <div class="about-facts">
+    <article><span>01 / CORE FEATURE</span><h3>Ticket management</h3><p>Private channels are created for a member and the configured support role.</p></article>
+    <article><span>02 / ADMIN TOOL</span><h3>Ticket panel</h3><p>The <code>/ticketpanel</code> command is restricted to administrators in the supplied source.</p></article>
+    <article><span>03 / PROJECT CREDIT</span><h3>ALPHA X AURA</h3><p>The bot's ticket embed footer currently credits ALPHA X AURA.</p></article>
+  </div>
+</section>
+<section class="shell disclaimer"><span>NOTE</span><p>This is an independent community project and is not affiliated with, endorsed by, or sponsored by NVIDIA Corporation. The NVIDIA name is used here as the project's chosen identity.</p></section>
+{% endblock %}
