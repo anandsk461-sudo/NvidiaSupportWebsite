@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Privacy' if page == 'privacy' else 'Terms' }} — NVIDIA Support{% endblock %}
+{% block content %}
+<section class="page-hero shell">
+  <div class="eyebrow">PROJECT INFORMATION</div>
+  <h1>{{ 'Privacy' if page == 'privacy' else 'Terms of use' }}<span class="red-dot">.</span></h1>
+  <p>Draft page — review and customize this content before making the website public.</p>
+</section>
+<section class="shell legal-content">
+{% if page == 'privacy' %}
+  <h2>Privacy information</h2>
+  <p>This website is a public documentation site and does not provide user login or a dashboard in this version.</p>
+  <h3>Discord bot data</h3><p>The Discord bot may process Discord user and server identifiers, ticket-channel information, and messages posted by users in ticket channels as needed to operate its features. Review the bot implementation and hosting logs to confirm exactly what is stored.</p>
+  <h3>Retention and deletion</h3><p>The currently supplied bot code deletes a ticket channel when it is closed and does not implement transcript storage. Hosting providers may maintain operational logs under their own policies.</p>
+  <h3>Contact</h3><p>Add an official support contact before publishing this policy.</p>
+{% else %}
+  <h2>Terms of use</h2>
+  <p>This website provides information about the NVIDIA Support community bot. Use the bot only in Discord servers where you have permission to do so.</p>
+  <h3>Availability</h3><p>The service may change or become unavailable. No uptime guarantee is made by this website.</p>
+  <h3>Community conduct</h3><p>Do not use the bot or ticket system to harass others, submit unlawful content, or disrupt a community.</p>
+  <h3>Contact and updates</h3><p>Add the project owner's contact information and review these terms for your actual service before launch.</p>
+{% endif %}
+<div class="legal-warning">These are starter templates, not legal advice. Verify all statements and customize them for your actual deployment.</div>
+</section>
+{% endblock %}
