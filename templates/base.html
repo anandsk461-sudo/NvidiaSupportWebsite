@@ -15,7 +15,7 @@
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="topbar">
     <a class="brand" href="/">
-      <span class="brand-mark"><span>N</span></span>
+      <img class="brand-logo" src="{{ url_for('static', filename='bot-pfp.webp') }}" alt="NVIDIA Support Bot">
       <span>NVIDIA <b>SUPPORT</b></span>
     </a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -32,7 +32,10 @@
 
   <footer class="footer">
     <div class="footer-main">
-      <a class="brand" href="/"><span class="brand-mark"><span>N</span></span><span>NVIDIA <b>SUPPORT</b></span></a>
+      <a class="brand" href="/">
+        <img class="brand-logo" src="{{ url_for('static', filename='bot-pfp.webp') }}" alt="NVIDIA Support Bot">
+        <span>NVIDIA <b>SUPPORT</b></span>
+      </a>
       <p>Support that keeps your community moving.</p>
     </div>
     <div class="footer-links">
